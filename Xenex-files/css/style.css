@@ -2558,6 +2558,12 @@ footer.site-footer .bottom-footer p {
 .single-testimonial-style-two .client-info-box .img-box {
   width: 90px;
 }
+.single-testimonial-style-two .client-info-box .img-box img{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
 .single-testimonial-style-two .client-info-box .img-box > img {
   width: 100%;
   border-radius: 50%;
@@ -3546,7 +3552,7 @@ footer.site-footer .bottom-footer p {
   text-align: center;
   padding-top: 105px;
   padding-bottom: 50px;
-  background: #000 url(../img/inner-banner-1-1.jpg) center center no-repeat;
+  background: #000 url(../img/about-bg.avif) center center no-repeat;
   background-size: cover;
 }
 .inner-banner h3, .inner-banner ul {
@@ -4392,7 +4398,7 @@ footer.site-footer .bottom-footer p {
 }
 
 .service-title {
-  background: #000 url(../img/service-bg.jpg) center center no-repeat;
+  background: #000 url(../img/bg4.jpg) center center no-repeat;
   background-size: cover;
   padding-top: 110px;
   padding-bottom: 240px;
@@ -4408,7 +4414,7 @@ footer.site-footer .bottom-footer p {
 .service-style-four .row [class*=col-] {
   padding: 0;
 }
-.service-style-four .row [class*=col-]:nth-child(1) .single-service-style-four .img-box .box .content h3 span {
+/* .service-style-four .row [class*=col-]:nth-child(1) .single-service-style-four .img-box .box .content h3 span {
   color: #FE5A0E;
 }
 .service-style-four .row [class*=col-]:nth-child(2) .single-service-style-four .img-box .box .content h3 span {
@@ -4416,7 +4422,7 @@ footer.site-footer .bottom-footer p {
 }
 .service-style-four .row [class*=col-]:nth-child(3) .single-service-style-four .img-box .box .content h3 span {
   color: #B1EA04;
-}
+} */
 .service-style-four.about-page {
   padding: 120px 0;
 }
@@ -4430,9 +4436,65 @@ footer.site-footer .bottom-footer p {
   padding-left: 100px;
 }
 
+.icon-services {
+  margin-top: 30px;
+}
+
+.service-box {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  width: 100%; 
+  max-width: 400px; 
+}
+
+.service-box i {
+  font-size: 40px;
+  color: #FE5A0E;
+  margin-bottom: 10px;
+}
+
+.service-box h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 14px;
+  color: #666;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 991px) {
+  .icon-services .row:last-child {
+      justify-content: center;
+  }
+}
+
+.why{
+  margin: auto !important;
+}
+
+
 .single-service-style-four .img-box {
   position: relative;
 }
+
+.single-service-style-four .img-box img{
+  height: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .single-service-style-four .img-box > img {
   width: 100%;
 }
@@ -4459,7 +4521,7 @@ footer.site-footer .bottom-footer p {
 }
 .single-service-style-four .img-box .box .content h3 {
   color: #FFFFFF;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 28px;
   font-family: 'Poppins';
   line-height: 1.2em;
@@ -4486,30 +4548,6 @@ footer.site-footer .bottom-footer p {
 }
 .single-service-style-four .img-box .box .content a.more:before {
   background: #252525;
-}
-
-.gas.single-service-style-four .img-box .box .content h3 span {
-  color: #FE5A0E;
-}
-
-.chemical.single-service-style-four .img-box .box .content h3 span {
-  color: #31DAF9;
-}
-
-.eco.single-service-style-four .img-box .box .content h3 span {
-  color: #B1EA04;
-}
-
-.mechanical.single-service-style-four .img-box .box .content h3 span {
-  color: #D3AE3A;
-}
-
-.petrol.single-service-style-four .img-box .box .content h3 span {
-  color: #FDFD1E;
-}
-
-.power.single-service-style-four .img-box .box .content h3 span {
-  color: #54C4FD;
 }
 
 .service-style-four-carousel.owl-theme .owl-dots {
@@ -4759,6 +4797,10 @@ h3 {
   color: #262626;
   font-weight: 600;
   font-family: 'Poppins';
+}
+
+.about-content p{
+  color: #ffffff !important;
 }
 .about-style-one .about-content h3 span {
   color: #FE5A0E;
@@ -5038,7 +5080,7 @@ h3 {
 * 23. fact counter styles 
 ***************************/
 .fact-counter-section {
-  background: #000 url(../img/fact-counter-bg.jpg) center center no-repeat fixed;
+  background: #000 url(../img/our-partners.jpg) center center no-repeat fixed;
   background-size: cover;
   position: relative;
   padding-top: 110px;
