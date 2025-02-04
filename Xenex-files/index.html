@@ -1024,50 +1024,12 @@
 
     
 
-    <section class="brand-carousel-area">
 
-        <div class="container">
-
-            <div class="brand-carousel owl-carousel owl-theme">
-
-                <div class="item">
-                    <i class="brands-icon-codecanyon"></i>
-                </div><!-- /.item -->
-
-                <div class="item">
-                    <i class="brands-icon-envato"></i>
-                </div><!-- /.item -->
-
-                <div class="item">
-                    <i class="brands-icon-graphicriver"></i>
-                </div><!-- /.item -->
-
-                <div class="item">
-                    <i class="brands-icon-photodune"></i>
-                </div><!-- /.item -->
-
-                <div class="item">
-                    <i class="brands-icon-themeforest"></i>
-                </div><!-- /.item -->
-
-                <div class="item">
-                    <i class="brands-icon-videohive"></i>
-                </div><!-- /.item -->
-
-                <div class="item">
-                    <i class="brands-icon-audiojungle"></i>
-                </div><!-- /.item -->
-
-            </div><!-- /.brand-carousel owl-carousel owl-theme -->
-
-        </div><!-- /.container -->
-
-    </section><!-- /.brand-carousel-area -->
 
     
     <section class="brand-container">
         <div class="brand-showcase">
-            <h2 class="text-center mb-4">Our Brand Collaborations</h2>
+            <h2 class="text-center mb-4">Our Clients</h2>
             <div class="container">
                 <div class="d-flex flex-wrap justify-content-center">
                     <!-- Repeat this div for 20 brand images -->
@@ -1159,6 +1121,7 @@
             justify-content: center;
             align-items: center;
             max-width: 160px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
     
         .brand-logo img {
@@ -1168,8 +1131,14 @@
             border-radius: 10px;
             background-color: white;
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-    
+
+        .brand-logo:hover img {
+            transform: scale(1.1); /* Slightly enlarges the image */
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Enhances the shadow */
+        }
+        
         @media (max-width: 992px) {
             .brand-logo {
                 flex: 1 1 calc(25% - 20px); /* 4 columns */
