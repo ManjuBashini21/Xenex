@@ -3458,9 +3458,35 @@ footer.site-footer .bottom-footer p {
   background: #252525;
 }
 
+
+.brand-container {
+  padding: 40px 0;
+}
+
+.brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-logo img {
+  width: 120px; /* Adjust as needed */
+  height: 120px; /* Ensuring uniform size */
+  object-fit: contain;
+  padding: 10px;
+  border-radius: 10px; /* Slight rounded edges */
+  background-color: white;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
 .contact-info-style-two {
-  background: #000 url(../img/project-video-box-bg.jpg) center center no-repeat;
+  background: #000 url(../img/projects.avif) center center no-repeat;
   background-size: cover;
+  margin-bottom: 50px;
 }
 .contact-info-style-two .left-content {
   position: relative;
@@ -3893,6 +3919,11 @@ footer.site-footer .bottom-footer p {
 .portfolio-style-two .single-portfolio-style-two .img-box {
   position: relative;
 }
+
+.portfolio-style-two .single-portfolio-style-two .img-box img{
+ width: 200px;
+ height: 200px;
+}
 .portfolio-style-two .single-portfolio-style-two .img-box > img {
   width: 100%;
 }
@@ -3903,7 +3934,7 @@ footer.site-footer .bottom-footer p {
   right: 10px;
   bottom: 10px;
   text-align: center;
-  background: #262626;
+  background: #363636;
   opacity: 0;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
