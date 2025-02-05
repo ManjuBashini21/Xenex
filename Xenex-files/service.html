@@ -31,65 +31,7 @@
 
 <div class="page-wrapper">
     
-    <div class="header-top home-three">
-        
-        <div class="top-info">
-            <div class="container">
-                <div class="pull-left left-text">
-                    <p>Welcome to our Industrio!</p>
-                </div><!-- /.pull-left -->
-                <div class="pull-right social">
-                    <a href="#" class="fab fa-facebook-f"></a><!--
-                    --><a href="#" class="fab fa-twitter"></a><!--
-                    --><a href="#" class="fab fa-google-plus-g"></a><!--
-                    --><a href="#" class="fab fa-linkedin-in"></a>
-                </div><!-- /.pull-right -->
-            </div><!-- /.container -->
-        </div><!-- /.top-info -->
 
-        <div class="container">
-
-            <div class="logo pull-left">
-                <a href="index.html"><img src="img/logo2-1.png" alt="Awesome Image"/></a>
-            </div><!-- /.logo -->
-
-            <div class="header-right-info pull-right">
-
-                <div class="single-header-right-info">
-                    <div class="icon-box">
-                        <i class="industrio-icon-phone-call"></i>
-                    </div><!-- /.icon-box -->
-                    <div class="text-box">
-                        <p>Call us 9:00am - 6:00pm</p>
-                        <h3>222-121-4562</h3>
-                    </div><!-- /.text-box -->
-                </div><!-- /.single-header-right-info -->
-
-                <div class="single-header-right-info">
-                    <div class="icon-box">
-                        <i class="industrio-icon-clock"></i>
-                    </div><!-- /.icon-box -->
-                    <div class="text-box">
-                        <p>Monday to Friday</p>
-                        <h3>9:00am - 6:00pm</h3>
-                    </div><!-- /.text-box -->
-                </div><!-- /.single-header-right-info -->
-
-                <div class="single-header-right-info">
-                    <div class="icon-box">
-                        <i class="industrio-icon-envelope"></i>
-                    </div><!-- /.icon-box -->
-                    <div class="text-box">
-                        <p>E-mail us</p>
-                        <h3>support@gmail.com</h3>
-                    </div><!-- /.text-box -->
-                </div><!-- /.single-header-right-info -->
-
-            </div><!-- /.header-right-info -->
-
-        </div><!-- /.container -->
-
-    </div><!-- /.header-top home-one -->
 
 
     <header class="header header-home-three">
@@ -97,7 +39,6 @@
         <nav class="navbar navbar-default header-navigation stricky">
 
             <div class="container clearfix">
-
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button class="side-nav-toggler side-nav-opener"><i class="fa fa-bars"></i></button>
@@ -122,11 +63,8 @@
                         </li>
                         <li> 
                             <a href="project.html">Projects</a> 
-                            <ul class="sub-menu">
-                                <li> <a href="single-project.html">Project Details</a> </li>
-                            </ul><!-- /.sub-menu -->
                         </li>
-                        <li> 
+                        <!-- <li> 
                             <a href="#">Pages</a> 
                             <ul class="sub-menu">
                                 <li> <a href="404.html">Error 404</a> </li>
@@ -135,23 +73,36 @@
                                 <li> <a href="single-project.html">Project Details</a> </li>
                                 <li><a href="team.html">Team</a></li>
                                 <li><a href="testimonials.html">Testimonials</a></li>   
-                            </ul><!-- /.sub-menu -->
-                        </li>
+                            </ul>
+                        </li> -->
                         <li> 
                             <a href="blog.html">Blog</a> 
-                            <ul class="sub-menu">
-                                <li><a href="blog.html">Blog Classic</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                            </ul><!-- /.sub-menu -->
                         </li>
                         <li> <a href="contact.html">Contact Us</a> </li>
-                    </ul>                
+                    </ul>              
+
                 </div><!-- /.navbar-collapse -->
+
                 <div class="right-side-box">
-                    <a href="#" class="rqa-btn"><span class="inner">Get a Quote <i class="fa fa-caret-right"></i></a>
+                    <a href="#" class="rqa-btn" id="openPopup"><span class="inner">Get a Quote <i class="fa fa-caret-right"></i></span></a>
                 </div><!-- /.right-side-box -->
+
+                <div class="popup-overlay" id="popupForm">
+                    <div class="popup-box">
+                        <button class="close-btn" id="closePopup">&times;</button>
+                        <h2>Get a Quote</h2>
+                        <form>
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <textarea placeholder="Your Message" rows="4" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
             </div><!-- /.container -->
-        </nav>   
+
+        </nav>    
     </header><!-- /.header -->
 
 
@@ -488,7 +439,13 @@
                     <div class="footer-widget about-widget">
                         <a href="index.html"><img src="img/logo2-1.png" alt="Awesome Image"/></a>
                         <h3>About us</h3>
-                        <p>Many of our SELC registered employees are requested as main preferred temporary staff when a service.</p>
+                        <p>Xenex Engineering provides reliable GRP/FRP solutions with 25+ years of industry expertise.</p>
+                        <div class="social-links">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-google-plus-g"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                        </div><!-- /.social -->
                     </div><!-- /.footer-widget about-widget -->
                 </div><!-- /.col-md-3 -->
 
@@ -568,13 +525,15 @@
         </div><!-- /.top-content -->
 
         <nav class="nav-menu middle-content">
+
             <ul class="navigation-box">
                 <li> 
-                    <a href="index.html">Home <span class="subnav-toggler fa fa-caret-down"></a> 
+                    <a href="index.html">Home <span class="subnav-toggler fa fa-caret-down"></span></a> 
+                    
                 </li>
-                <li> <a href="about.html">About Us</a> </li>
-                <li class="current"> 
-                    <a href="service.html">Services <span class="subnav-toggler fa fa-caret-down"></a> 
+                <li class="current"> <a href="about.html">About Us</a> </li>
+                <li> 
+                    <a href="service.html">Services <span class="subnav-toggler fa fa-caret-down"></span></a> 
                     <ul class="sub-menu">
                         <li> <a href="grp-frp.html">GRP/FRP Engineering Solutions</a> </li>
                         <li><a href="installation.html">Installation & Maintenance</a></li>
@@ -583,34 +542,17 @@
                     </ul><!-- /.sub-menu -->
                 </li>
                 <li> 
-                    <a href="project.html">Projects <span class="subnav-toggler fa fa-caret-down"></a> 
-                    <ul class="sub-menu">
-                        <li> <a href="single-project.html">Project Details</a> </li>
-                    </ul><!-- /.sub-menu -->
+                    <a href="project.html">Projects <span class="subnav-toggler fa fa-caret-down"></span></a> 
                 </li>
                 <li> 
-                    <a href="#">Pages <span class="subnav-toggler fa fa-caret-down"></a> 
-                    <ul class="sub-menu">
-                        <li> <a href="404.html">Error 404</a> </li>
-                        <li> <a href="coming-soon.html">Coming Soon</a> </li>
-                        <li> <a href="project.html">Projects</a> </li>
-                        <li> <a href="single-project.html">Project Details</a> </li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>   
-                    </ul><!-- /.sub-menu -->
-                </li>
-                <li> 
-                    <a href="blog.html">Blog <span class="subnav-toggler fa fa-caret-down"></a> 
-                    <ul class="sub-menu">
-                        <li><a href="blog.html">Blog Classic</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul><!-- /.sub-menu -->
+                    <a href="blog.html">Blog <span class="subnav-toggler fa fa-caret-down"></span></a> 
                 </li>
                 <li> <a href="contact.html">Contact Us</a> </li>
             </ul>
         </nav><!-- /.nav-menu -->
 
         <div class="bottom-content">
+
             <div class="social">
                 <a href="#" class="fab fa-facebook-f"></a><!--
                 --><a href="#" class="fab fa-twitter"></a><!--
@@ -618,7 +560,9 @@
                 --><a href="#" class="fab fa-instagram"></a><!--
                 --><a href="#" class="fab fa-behance"></a>
             </div><!-- /.social -->
-            <p class="copy-text">&copy; 2018 Industrio. <br /> made with <i class="fa fa-heart"></i> by themexriver</p><!-- /.copy-text -->
+
+            <p class="copy-text">&copy; 2018 XENEX <br /> made with <i class="fa fa-heart"></i> by Navi Promotions</p><!-- /.copy-text -->
+
         </div><!-- /.bottom-content -->
 
     </div><!-- /.sidebar-content -->
@@ -642,6 +586,35 @@
 <div class="scroll-to-top scroll-to-target" data-target="html"><i class="fa fa-angle-up"></i></div>                    
 
 <script src="js/jquery.js"></script>
+
+<script>
+    // Get elements
+    const openPopup = document.getElementById("openPopup");
+    const closePopup = document.getElementById("closePopup");
+    const popupForm = document.getElementById("popupForm");
+    const body = document.body;
+
+    // Show popup
+    openPopup.addEventListener("click", function(event) {
+        event.preventDefault();
+        popupForm.style.display = "flex";
+        body.classList.add("no-scroll"); // Disable background scrolling
+    });
+
+    // Close popup
+    closePopup.addEventListener("click", function() {
+        popupForm.style.display = "none";
+        body.classList.remove("no-scroll"); // Enable background scrolling
+    });
+
+    // Close popup when clicking outside the form
+    window.addEventListener("click", function(event) {
+        if (event.target === popupForm) {
+            popupForm.style.display = "none";
+            body.classList.remove("no-scroll");
+        }
+    });
+</script>
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-select.min.js"></script>
