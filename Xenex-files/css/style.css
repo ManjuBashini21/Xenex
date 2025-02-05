@@ -3205,7 +3205,12 @@ footer.site-footer .bottom-footer p {
   padding: 17px 0;
   z-index: 4;
   position: relative;
+  margin-top: 100px;
+  top: 80px;
 }
+
+
+
 .single-team-style-one .img-box .name-box:after {
   content: '';
   position: absolute;
@@ -3213,7 +3218,7 @@ footer.site-footer .bottom-footer p {
   right: 0;
   width: 58px;
   height: 51px;
-  background: transparent url(../img/team-tri-shape.png) 0 0 no-repeat;
+  /* background: transparent url(../img/team-tri-shape.png) 0 0 no-repeat; */
   margin-top: -2px;
   z-index: 1;
 }
@@ -3584,29 +3589,31 @@ body.no-scroll {
 }
 .contact-info-style-one .contact-infos {
   display: flex;
-  align-items: flex-start; /* Aligns content to the top */
-  justify-content: center; /* Centers content horizontally */
-  gap: 80px; /* Space between contact sections */
+  align-items: flex-start; 
+  justify-content: center; 
+  gap: 80px; 
   padding: 21px 0;
-  flex-wrap: wrap; /* Ensures responsiveness */
+  flex-wrap: wrap; 
 }
 
 .contact-info-style-one .single-contact-infos {
   display: flex;
-  flex-direction: column; /* Stacks items vertically */
+  flex-direction: column;
   align-items: center;
-  text-align: center; /* Centers text */
-  gap: 10px; /* Space between icon and text */
+  text-align: center; 
+  gap: 10px; 
 }
 
 .contact-info-style-one .icon-box {
-  width: 50px; /* Adjust width */
+  width: 50px; 
   text-align: center;
 }
 
 .contact-info-style-one .icon-box i {
-  font-size: 35px; /* Adjust icon size */
+  font-size: 35px; 
   color: #ffffff;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-info-style-one .text-box h3 {
@@ -4801,6 +4808,7 @@ body.no-scroll {
   height: 200px;
   margin-left: 10px;
   margin-right: 10px;
+  width: 100% !important;
 }
 
 .single-service-style-four .img-box > img {
@@ -5107,9 +5115,6 @@ h3 {
   font-family: 'Poppins';
 }
 
-.about-content p{
-  color: #ffffff !important;
-}
 .about-style-one .about-content h3 span {
   color: #FE5A0E;
 }
@@ -5126,7 +5131,7 @@ h3 {
 .about-style-one .about-content p {
   font-size: 16px;
   line-height: 27px;
-  color: #555555;
+  color: #555555 !important;
   margin-top: 35px;
   margin-bottom: 30px;
 }
@@ -5361,7 +5366,7 @@ h3 {
   font-weight: 600;
 }
 .about-style-three .about-content p {
-  color: #545454;
+  color: #555555 !important;
   font-size: 16px;
   line-height: 27px;
   margin-top: 20px;

@@ -356,7 +356,7 @@
 
             <ul class="navigation-box">
                 <li> 
-                    <a href="../index.html">Home <span class="subnav-toggler fa fa-caret-down"></span></a> 
+                    <a href="../index.html">Home</a> 
                     
                 </li>
                 <li class="current"> <a href="about.html">About Us</a> </li>
@@ -425,20 +425,20 @@
     openPopup.addEventListener("click", function(event) {
         event.preventDefault();
         popupForm.style.display = "flex";
-        body.classList.add("no-scroll"); // Disable background scrolling
+        
     });
 
     // Close popup
     closePopup.addEventListener("click", function() {
         popupForm.style.display = "none";
-        body.classList.remove("no-scroll"); // Enable background scrolling
+        
     });
 
     // Close popup when clicking outside the form
     window.addEventListener("click", function(event) {
         if (event.target === popupForm) {
             popupForm.style.display = "none";
-            body.classList.remove("no-scroll");
+            
         }
     });
 </script>
