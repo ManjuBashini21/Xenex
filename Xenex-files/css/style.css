@@ -3922,6 +3922,15 @@ body.no-scroll {
   color: #fff;
 }
 
+.fact-counter .single-fact-counter .counter::after {
+  content: attr(data-suffix); 
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+
+
 /************************** 
 * 18. error 404 styles 
 ***************************/
