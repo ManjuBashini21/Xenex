@@ -3215,11 +3215,33 @@ footer.site-footer .bottom-footer p {
   left: 10px;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hover-enlarge {
+  transition: transform 0.3s ease; 
+  display: block; 
   width: 100%;
 }
 
+.img-box:hover .hover-enlarge {
+  transform: scale(1.1); 
+}
+
+.img-box:hover .services-overlay{
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+  display: block; 
+  width: 100%;
+}
+
+.service-item-box .img-box {
+  overflow: hidden;
+  position: relative; 
+}
 
 .single-team-style-one .img-box .name-box:after {
   content: '';
