@@ -530,7 +530,10 @@ body.active-preloader-ovh {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-
+.logo-footer {
+  text-align: center; /* Center the logo */
+  margin-top: 40px;
+}
 .header-top {
   background: #181818;
 }
@@ -3869,16 +3872,28 @@ body.no-scroll {
 ***************************/
 .inner-banner {
   text-align: center;
-  padding-top: 105px;
-  padding-bottom: 50px;
   background: #000 url(../img/about-bg.avif) center center no-repeat;
   background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.inner-banner .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 .inner-banner h3, .inner-banner ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .inner-banner h3 {
   font-size: 36px;
   font-family: 'Poppins';
@@ -3886,19 +3901,23 @@ body.no-scroll {
   color: #FFFFFF;
   margin-bottom: 5px;
 }
+
 .inner-banner ul.breadcumb li {
   display: inline-block;
   vertical-align: middle;
 }
+
 .inner-banner ul.breadcumb a, .inner-banner ul.breadcumb span {
   color: #FE5A0E;
   font-size: 18px;
 }
+
 .inner-banner ul.breadcumb span.sep {
   margin-left: 10px;
   margin-right: 10px;
   color: #FE5A0E;
 }
+
 .inner-banner ul.breadcumb span {
   color: #fff;
 }
