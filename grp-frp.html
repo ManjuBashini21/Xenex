@@ -83,22 +83,30 @@
                 </div><!-- /.navbar-collapse -->
 
                 <div class="right-side-box">
-                    <a href="#" class="rqa-btn" id="openPopup"><span class="inner">Get a Quote <i class="fa fa-caret-right"></i></span></a>
-                </div><!-- /.right-side-box -->
-
-                <div class="popup-overlay" id="popupForm">
-                    <div class="popup-box">
-                        <button class="close-btn" id="closePopup">&times;</button>
-                        <h2>Get a Quote</h2>
-                        <form>
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Your Email" required>
-                            <textarea placeholder="Your Message" rows="4" required></textarea>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
+                    <a href="#" class="rqa-btn" onclick="togglePopup()"><span class="inner">Get a Quote <i class="fa fa-caret-right"></i></span></a>
                 </div>
+                
+                <div id="popupOverlay" class="overlay-container">
 
+                    <div class="popup-box">
+
+                        <span class="close-icon">&times;</span> 
+
+                        <h2 style="color: #FD5912; margin-bottom: 20px;">Popup Form</h2> 
+
+                        <form class="form-container">
+                            <label class="form-label" for="name">Username</label>
+                            <input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required>
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-input" type="email" placeholder="Enter Your Email" id="email" name="email" required>
+                            <label class="form-label" for="email">Address</label>
+                            <input class="form-input" type="address" placeholder="Enter Your Address" id="address" name="address" required>
+                            <button class="btn-submit" type="submit">Submit</button>
+                        </form>
+
+                    </div>
+
+                </div>
 
             </div><!-- /.container -->
 
@@ -529,32 +537,24 @@
 <script src="js/jquery.js"></script>
 
 <script>
-    // Get elements
-    const openPopup = document.getElementById("openPopup");
-    const closePopup = document.getElementById("closePopup");
-    const popupForm = document.getElementById("popupForm");
-    const body = document.body;
-
-    // Show popup
-    openPopup.addEventListener("click", function(event) {
-        event.preventDefault();
-        popupForm.style.display = "flex";
+    
+    function togglePopup() {
+        const overlay = document.getElementById('popupOverlay');
         
-    });
-
-    // Close popup
-    closePopup.addEventListener("click", function() {
-        popupForm.style.display = "none";
         
-    });
-
-    // Close popup when clicking outside the form
-    window.addEventListener("click", function(event) {
-        if (event.target === popupForm) {
-            popupForm.style.display = "none";
-            
+        if (overlay.classList.contains('show')) {
+            overlay.classList.remove('show');  
+        } else {
+            overlay.classList.add('show');  
         }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.close-icon').addEventListener('click', function() {
+            togglePopup(); 
+        });
     });
+
 </script>
 
 <script src="js/bootstrap.min.js"></script>
