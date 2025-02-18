@@ -4825,7 +4825,6 @@ footer.site-footer .bottom-footer p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3); 
   z-index: 1;
 }
 
@@ -4835,7 +4834,6 @@ footer.site-footer .bottom-footer p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
@@ -4879,21 +4877,49 @@ footer.site-footer .bottom-footer p {
   padding-left: 100px;
 }
 
-.icon-services {
-  margin-top: 30px;
-}
+/* .icon-services .row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 30px;
+  justify-content: center;
+} */
 
 .service-box {
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  margin: 10px !important;
+}
+
+.mt-4 {
+  margin-top: 40px !important;
+}
+
+
+
+.icon-services .row {
+  margin-bottom: 20px;
+}
+
+
+
+/* .service-box {
   background: white;
   padding: 20px;
   text-align: center;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   margin-bottom: 20px;
   width: 100%; 
   max-width: 400px; 
-}
+  text-align: center;
+} */
 
 .service-box i {
   font-size: 40px;
@@ -4999,6 +5025,123 @@ footer.site-footer .bottom-footer p {
 .single-service-style-four .img-box .box .content a.more:before {
   background: #252525;
 }
+
+.info-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 60px;
+}
+.info-box:hover {
+  background: #FE5A0E;
+  color: #fff;
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.info-box i {
+  font-size: 40px;
+  color: #FE5A0E;
+  margin-bottom: 15px;
+  transition: color 0.3s ease-in-out;
+}
+.info-box:hover i {
+  color: #fff;
+}
+.info-box h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+.info-box:hover h3 {
+  color: #fff;
+}
+.info-box p {
+  font-size: 14px;
+  color: #555;
+  transition: color 0.3s ease-in-out;
+  text-align: justify;
+}
+.info-box:hover p {
+  color: #fff;
+}
+
+.org-chart-image {
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically if required */
+  margin-top: 20px; /* Optional, adds space above the image */
+}
+
+.org-chart-image img {
+  max-width: 100%;  /* Ensures the image scales properly */
+  height: auto;     /* Maintains the aspect ratio */
+}
+
+
+/* Region Section Styles */
+.region-section {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+
+.sec-title {
+  margin-bottom: 40px;
+}
+
+.sec-title h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #FE5A0E;
+}
+
+.sec-title p {
+  font-size: 16px;
+  color: #555;
+}
+
+.region-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.region-box h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FE5A0E;
+  margin-bottom: 10px;
+}
+
+.region-box p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.google-map iframe {
+  border-radius: 8px;
+}
+
+.region-box:hover {
+  transform: translateY(-10px); /* Lift the div */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+  background-color: #f1f1f1; /* Change background color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .region-box {
+      margin-bottom: 20px;
+  }
+}
+
 
 .service-style-four-carousel.owl-theme .owl-dots {
   margin-top: 40px;
@@ -5662,7 +5805,154 @@ h3 {
 /************************** 
 * 24. timeline styles 
 ***************************/
-.time-line {
+
+/* General Styles */
+.timeline-section {
+  padding: 60px 0;
+  background: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+
+.timeline-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timeline-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline-description {
+  font-size: 18px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.timeline-filter {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timeline-select {
+  font-size: 16px;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.timeline-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.timeline-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-nav-item {
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.timeline-nav-item:hover {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.timeline-nav-item.active {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 100px;
+}
+
+.timeline-entry {
+  display: none;
+  margin-bottom: 40px;
+  transition: all 0.5s ease;
+}
+
+.timeline-entry.active {
+  display: flex;
+}
+
+.timeline-entry-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timeline-entry img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.timeline-entry img:hover {
+  transform: scale(1.05);
+}
+
+.timeline-text {
+  max-width: 500px;
+  padding-left: 20px;
+}
+
+.timeline-text h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline-text p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Animation for Tab Navigation */
+.timeline-nav-item.active {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+/* .time-line {
   padding-bottom: 105px;
   padding-top: 100px;
 }
@@ -5828,7 +6118,7 @@ h3 {
   color: #545454;
   letter-spacing: 0.025em;
   margin-top: 30px;
-}
+} */
 
 /************************** 
 * 25. strategy styles 
