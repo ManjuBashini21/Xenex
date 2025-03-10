@@ -3928,7 +3928,7 @@ footer.site-footer .bottom-footer p {
 ***************************/
 .inner-banner {
   text-align: center;
-  background:  url(../img/about-bg.avif) center center no-repeat;
+  background:  url(../img/home2.avif) center center no-repeat;
   background-size: cover;
   height: 400px;
   display: flex;
@@ -6442,4 +6442,78 @@ font-size: 20px;
   color: #FD5912;
 }
 
-/*# sourceMappingURL=style.css.map */
+
+
+
+@keyframes moveLetters {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #f4f4f4;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+.main-wrapper .abre-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+.main-wrapper .item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  width: 180px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.main-wrapper.item:hover {
+  transform: scale(1.1);
+}
+.main-wrapper .letter {
+  font-size: 50px;
+  font-weight: bold;
+  animation: moveLetters 2s infinite;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main-wrapper .item:nth-child(1) .letter { color: #ff0000; }
+.main-wrapper .item:nth-child(2) .letter { color: #92d050; }
+.main-wrapper .item:nth-child(3) .letter { color: #fbc02d; }
+.main-wrapper .item:nth-child(4) .letter { color: #197cff; }
+.main-wrapper .item:nth-child(5) .letter { color: #ef8600; }
+
+.main-wrapper .meaning {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  line-height: 28px;
+}
+.main-wrapper .icon {
+  font-size:4rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .item {
+      width: 100%;
+      max-width: 250px;
+  }
+}

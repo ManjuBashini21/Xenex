@@ -186,7 +186,7 @@
 
                         <h2 style="color: #FD5912; margin-bottom: 20px;">Popup Form</h2> 
 
-                        <form class="form-container">
+                        <form class="form-container" id="contact-form">
                             <label class="form-label" for="name">Username</label>
                             <input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required>
                             <label class="form-label" for="email">Email</label>
@@ -205,6 +205,39 @@
         </nav>   
 
     </header><!-- /.header -->
+
+
+    <!-- XENEX Abbreviation Section -->
+    <section  class="main-wrapper">
+        <div class="abre-container">
+            <div class="item">
+                
+                <span class="letter">X</span>
+                <div class="meaning">EXCEPTIONAL PLANNING</div>
+            </div>
+            <div class="item">
+               
+                <span class="letter">E</span>
+                <div class="meaning">EFFECTIVE PRODUCTION</div>
+            </div>
+            <div class="item">
+                
+                <span class="letter">N</span>
+                <div class="meaning">NON-COMPROMISE ON SAFETY</div>
+            </div>
+            <div class="item">
+                
+                <span class="letter">E</span>
+                <div class="meaning">EXCELLENCE QUALITY</div>
+            </div>
+            <div class="item">
+                
+                <span class="letter">X</span>
+                <div class="meaning">EXCELLENT DELIVERY</div>
+            </div>
+        </div>
+    </section>
+    
 
 
     <section class="service-style-three sec-pad">
@@ -290,11 +323,6 @@
                         </div><!-- /.img-box -->
                     </div><!-- /.single-service-style-three -->
                 </div><!-- /.col-md-4 col-md-6 -->
-
-                
-
-
-
 
             </div><!-- /.row -->
 
@@ -1079,7 +1107,7 @@
 
 
     <div >
-      <iframe class="google-map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7744608738985!2d103.6958968756791!3d1.310664561699071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1833a3035c25%3A0x5e34413321a7e1be!2sACE%20%40%20Buroh!5e0!3m2!1sen!2sin!4v1738731418096!5m2!1sen!2sin" width="100%"   height="423px;" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7509516581977!2d103.720198875679!3d1.3253420616526583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da05567980e629%3A0x46168a6d63180523!2s1%20Corporation%20Dr%2C%20Revv%20Building%2C%20Singapore%20619775!5e0!3m2!1sen!2sin!4v1741582358689!5m2!1sen!2sin" width="100%"   height="423px;" style="border:0; margin-top: 70px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
      <section class="contact-info-style-one">
@@ -1173,11 +1201,12 @@
                         <div class="title">
                             <h3>Services</h3>
                         </div><!-- /.title -->
-                        <ul class="links-list">
-                            <li> <a href="grp-frp.html">GRP/FRP Engineering Solutions</a> </li>
-                            <li><a href="installation.html">Installation & Maintenance</a></li>
-                            <li><a href="custom-fabrication.html">Custom Fabrication & Coating</a></li>
-                            <li><a href="specalized-training.html">Specialized Training & Expertise</a></li>
+                        <ul class="links-list" style="text-align: justify;">
+                            XENEX specializes in FRP / GRP / GRE / GRV pipework, offering fabrication, installation, inspection, and maintenance. We also provide steel fabrication, mechanical works, and FRP repair services.
+
+                            <!-- <li><a href="Xenex-files/installation.html">Installation & Maintenance</a></li>
+                            <li><a href="Xenex-files/custom-fabrication.html">Custom Fabrication & Coating</a></li>
+                            <li><a href="Xenex-files/specalized-training.html">Specialized Training & Expertise</a></li> -->
                         </ul><!-- /.links-list -->
                     </div><!-- /.footer-widget services-widget -->
                 </div><!-- /.col-md-3 -->
@@ -1272,6 +1301,33 @@
 <div class="scroll-to-top scroll-to-target" data-target="html"><i class="fa fa-angle-up"></i></div>                    
 
 <script src="js/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+    (function() {
+        emailjs.init("yiIOxjZUknkIm3AoI"); // Replace with your EmailJS user ID
+
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent page reload
+
+            const formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                address: document.getElementById("address").value
+            };
+
+            emailjs.send("service_ex9r96o", "template_bsbkwi9", formData)
+                .then(response => {
+                    alert("Email sent successfully!");
+                    document.getElementById("contact-form").reset(); // Reset form after submission
+                })
+                .catch(error => {
+                    console.error("Email sending failed:", error);
+                    alert("Failed to send email.");
+                });
+        });
+    })();
+</script>
 
 <script>
     
@@ -1293,6 +1349,15 @@
     });
 
 </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+    });
+</script>
+
 
 
 <script src="js/bootstrap.min.js"></script>
