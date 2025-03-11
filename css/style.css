@@ -324,6 +324,8 @@ body.active-preloader-ovh {
   line-height: 1em;
   position: relative;
 }
+
+
 .header-navigation .container .right-side-box a.rqa-btn i {
   display: inline-block;
   vertical-align: middle;
@@ -1224,12 +1226,20 @@ body.active-preloader-ovh {
   background-color: #34424F;
 }
 @media (max-height: 600px) {
-  #minimal-bootstrap-carousel.slider-home-two .carousel-inner .item {
+  #minimal-bootstrap-carousel .carousel-inner .item {
     min-height: 600px;
   }
 }
 
-#minimal-bootstrap-carousel.slider-home-three .carousel-inner .item {
+@media (max-height: 480px) {
+  #minimal-bootstrap-carousel .carousel-inner .item {
+    min-height: 600px;
+    width: 100%;
+  }
+}
+
+
+#minimal-bootstrap-carousel.slider-home-three .carousel-inner .item img{
   min-height: 620px;
   height: 100%;
   width: 100%;
@@ -2527,10 +2537,9 @@ footer.site-footer .bottom-footer p {
 .single-testimonials-style-one {
   background: #F5F5F5;
   position: relative;
-  padding-left: 55px;
-  padding-top: 50px;
-  padding-bottom: 45px;
+  padding: 50px 20px 45px 55px;
   margin-bottom: 100px;
+  max-width: 800px;
 }
 .single-testimonials-style-one h3,
 .single-testimonials-style-one p {
@@ -2586,6 +2595,27 @@ footer.site-footer .bottom-footer p {
 .single-testimonials-style-one .name-box .text-box span {
   font-size: 16px;
   color: #545454;
+}
+
+@media (max-width: 1024px) {
+  .single-testimonials-style-one {
+    max-width: 90%;
+    padding: 40px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .single-testimonials-style-one {
+    max-width: 95%;
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .single-testimonials-style-one {
+    max-width: 100%;
+    padding: 25px 10px;
+  }
 }
 
 .testimonials-style-one-carousel .owl-nav {
@@ -3684,7 +3714,7 @@ footer.site-footer .bottom-footer p {
   justify-content: center; 
   gap: 80px; 
   padding: 21px 0;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .contact-info-style-one .single-contact-infos {
@@ -3720,6 +3750,16 @@ footer.site-footer .bottom-footer p {
   font-family: 'Poppins';
   color: #FFFFFF;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-info-style-one .icon-box i{
+    align-items: center;
+    justify-content: center;
+    margin:auto ;
+    text-align: center;
+    margin-left: 50px;
+  }
 }
 
 
@@ -4007,7 +4047,7 @@ footer.site-footer .bottom-footer p {
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: nowrap; /* Prevents wrapping */
+  flex-wrap: wrap;  /* Prevents wrapping */
   padding-bottom: 10px;
 }
 
@@ -4047,16 +4087,54 @@ footer.site-footer .bottom-footer p {
   color: #666;
 }
 
-/* Responsive: Adjust for smaller screens */
-@media (max-width: 1100px) {
+@media (max-width: 768px) {
   .benefits-grid {
-      overflow-x: auto; /* Enables horizontal scrolling on smaller screens */
+    flex-direction: column;
+    align-items: center;
   }
+
   .benefit-card {
-      flex: 0 0 auto; /* Prevents cards from shrinking */
+    width: 90%; /* Make cards take full width */
+    margin-bottom: 20px; /* Add space between cards */
+  }
+
+  .benefits-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .benefit-card h3 {
+    font-size: 16px; /* Smaller heading size for mobile */
+  }
+
+  .benefit-card p {
+    font-size: 12px; /* Smaller text for mobile */
   }
 }
 
+/* Tablet View: Adjust the width of the cards */
+@media (max-width: 1024px) {
+  .benefits-grid {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .benefit-card {
+    width: 45%; /* Make cards take 45% width on tablets */
+  }
+
+  .benefits-heading {
+    font-size: 26px;
+  }
+
+  .benefit-card h3 {
+    font-size: 17px;
+  }
+
+  .benefit-card p {
+    font-size: 13px;
+  }
+}
 
 
 /************************** 
