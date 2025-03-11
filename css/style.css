@@ -1238,8 +1238,15 @@ body.active-preloader-ovh {
   }
 }
 
+@media (max-width: 768px) {
+  #minimal-bootstrap-carousel .carousel-inner .item{
+    max-width: 100%;
+  }
+}
 
-#minimal-bootstrap-carousel.slider-home-three .carousel-inner .item img{
+
+
+#minimal-bootstrap-carousel.slider-home-three .carousel-inner .item{
   min-height: 620px;
   height: 100%;
   width: 100%;
@@ -4492,10 +4499,11 @@ footer.site-footer .bottom-footer p {
 }
 .portfolio-style-two .single-portfolio-style-two .img-box .overlay .box .content a.img-popup {
   color: #FE5A0E;
-  font-size: 15px;
+  font-size: 35px;
   position: absolute;
   top: 20px;
   right: 20px;
+  font-weight: bolder;
 }
 .portfolio-style-two .single-portfolio-style-two:hover .img-box .overlay {
   opacity: 1;
@@ -5095,6 +5103,9 @@ footer.site-footer .bottom-footer p {
 
 .single-service-style-four .img-box {
   position: relative;
+  width: 100%;
+  max-width: 600px; /* Set a max-width for consistency */
+  margin: auto; /* Center the box */
 }
 
 .single-service-style-four .img-box img{
@@ -5102,6 +5113,8 @@ footer.site-footer .bottom-footer p {
   margin-left: 10px;
   margin-right: 10px;
   width: 100% !important;
+  object-fit: cover; /* Ensures images fill the area without distortion */
+  border-radius: 10px; /* Optional: Adds rounded corners */
 }
 
 .single-service-style-four .img-box > img {
@@ -5113,12 +5126,10 @@ footer.site-footer .bottom-footer p {
   left: 0;
   right: 0;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .single-service-style-four .img-box .box .content {
   width: 100%;
