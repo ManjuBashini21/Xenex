@@ -4881,6 +4881,10 @@ footer.site-footer .bottom-footer p {
 }
 .single-service-style-three .img-box {
   position: relative;
+  height: 250px;
+}
+.single-service-style-three .img-box img{
+  height: 250px;
 }
 
 .single-service-style-three .text-box {
