@@ -3975,13 +3975,56 @@ footer.site-footer .bottom-footer p {
 ***************************/
 .inner-banner {
   text-align: center;
-  background:  url(../img/home2.jpg) center center no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
+
+.about-banner {
+  background-image: url(../img/hero/hero1.jpg);
+}
+
+.blog-banner {
+  background-image: url(../img/hero/hero2.jpg);
+}
+
+.contact-banner {
+  background-image: url(../img/hero/hero3.jpg);
+}
+
+.custom-banner {
+  background-image: url(../img/hero/hero4.jpg);
+}
+
+.frp-banner {
+  background-image: url(../img/hero/hero5.jpg);
+}
+
+.grp-banner {
+  background-image: url(../img/hero/hero6.jpg);
+}
+
+.installation-banner {
+  background-image: url(../img/hero/hero7.jpg);
+}
+
+.project-banner {
+  background-image: url(../img/hero/hero8.jpg);
+}
+
+.service-banner {
+  background-image: url(../img/hero/hero9.jpg);
+}
+
+.training-banner {
+  background-image: url(../img/hero/hero10.jpg);
+}
+
+
 
 .inner-banner .container {
   display: flex;
@@ -4000,29 +4043,39 @@ footer.site-footer .bottom-footer p {
 .inner-banner h3 {
   font-size: 36px;
   font-family: 'Poppins';
-  font-weight: 600;
-  color: #FFFFFF;
+  font-weight: 700;
+  color: #FE5A0E; /* Dark Blue for better visibility */
   margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Soft shadow for better contrast */
 }
 
 .inner-banner ul.breadcumb li {
   display: inline-block;
   vertical-align: middle;
+  color: #374151; /* Dark Gray for better readability */
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.inner-banner ul.breadcumb a, .inner-banner ul.breadcumb span {
-  color: #FE5A0E;
+.inner-banner ul.breadcumb a {
+  color: #FE5A0E; /* Deep Golden for contrast */
   font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.inner-banner ul.breadcumb a:hover {
+  color: #B45309; /* Darker Golden on Hover */
 }
 
 .inner-banner ul.breadcumb span.sep {
   margin-left: 10px;
   margin-right: 10px;
-  color: #FE5A0E;
+  color: #ffffff; /* Neutral Gray for separator */
 }
 
 .inner-banner ul.breadcumb span {
-  color: #fff;
+  color: #ffffff; /* Dark Gray for clarity */
 }
 
 .fact-counter .single-fact-counter .counter::after {
@@ -4515,6 +4568,11 @@ footer.site-footer .bottom-footer p {
   top: 20px;
   right: 20px;
   font-weight: bolder;
+}
+
+.portfolio-style-two .single-portfolio-style-two .img-box .overlay .box .content a {
+  width: auto !important;
+  height: auto !important;
 }
 .portfolio-style-two .single-portfolio-style-two:hover .img-box .overlay {
   opacity: 1;
@@ -5447,18 +5505,12 @@ h3 {
   transform: translateY(-2px);
 }
 
-/* Add an icon before the heading */
-.service-details-page .service-details-content .list-group-item h5::before {
-  content: "\f058"; /* Font Awesome check-circle icon */
-  font-family: "Font Awesome 5 Free"; /* Ensure Font Awesome is loaded */
-  font-weight: 900;
-  color: #fe5a0e; /* Bootstrap primary color */
-  font-size: 18px;
-  position: absolute;
-  left: 15px;
-  top: 30%; 
-  transform: translateY(-50%);
+.text-muted {
+  display: flex;
+  align-items: start;
+  margin-bottom: 1rem !important; /* Ensures spacing between paragraphs */
 }
+
 
 /* Style headings */
 .service-details-page .service-details-content .list-group-item h5 {
@@ -5466,7 +5518,7 @@ h3 {
   font-weight: 600;
   color: #252525;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 5px;
+  margin-bottom: 10px !important;
 }
 
 /* Style paragraph */
@@ -6620,4 +6672,49 @@ font-size: 20px;
       width: 100%;
       max-width: 250px;
   }
+}
+
+.highlight {
+  background-color: #d1ecf1; /* Light Cyan Background */
+  padding: 8px;
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 1.1em;
+}
+
+.boat-icon {
+  color: #0056b3; /* Deep Blue for Icon */
+  font-size: 2em; /* Bigger Size */
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.scrolling-text {
+  position: absolute;
+  bottom: 0px; /* Adjust position */
+  width: 100%;
+  background: #13468d; /* Dark blue gradient */
+  color: #ffffff;/* Gold color text */
+  font-weight: bold;
+  font-size: 20px;
+  padding: 12px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.scrolling-text p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 12s linear infinite;
+}
+
+@keyframes scrollText {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+.scrolling-text i {
+  color: #FFD700; /* Light gold for icons */
+  font-size: 22px;
 }
