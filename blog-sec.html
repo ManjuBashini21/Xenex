@@ -88,25 +88,26 @@
                 </div>
                 
                 <div id="popupOverlay" class="overlay-container">
-
                     <div class="popup-box">
-
                         <span class="close-icon">&times;</span> 
-
                         <h2 style="color: #FD5912; margin-bottom: 20px;">Get In Touch</h2> 
-
+                
                         <form class="form-container" id="contact-form">
                             <label class="form-label" for="name">Username</label>
                             <input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required>
+                
                             <label class="form-label" for="email">Email</label>
                             <input class="form-input" type="email" placeholder="Enter Your Email" id="email" name="email" required>
-                            <label class="form-label" for="email">Address</label>
-                            <input class="form-input" type="address" placeholder="Enter Your Address" id="address" name="address" required>
+                
+                            <label class="form-label" for="address">Address</label>
+                            <input class="form-input" type="text" placeholder="Enter Your Address" id="address" name="address" required>
+                
+                            <label class="form-label" for="message">Message</label>
+                            <textarea class="form-input" placeholder="Enter Your Message" id="message" name="message" required></textarea>
+                
                             <button class="btn-submit" type="submit">Submit</button>
                         </form>
-
                     </div>
-
                 </div>
 
 
@@ -156,7 +157,7 @@
 
                     <div class="single-blog-style-two">
                         <div class="img-box">
-                            <img src="img/blog-img6.avif" alt="Oil Prices Impact"/>
+                            <img src="img/hero/hero3.jpg" alt="Oil Prices Impact"/>
                         </div>
                         <div class="text-box">
                             <a href="blog6.html"><h3>The Impact of Global Oil Prices on Energy Markets</h3></a>
@@ -176,7 +177,7 @@
 
                     <div class="single-blog-style-two">
                         <div class="img-box">
-                            <img src="img/blog-img7.jpg" alt="Future Trends"/>
+                            <img src="img/hero/hero4.jpg" alt="Future Trends"/>
                         </div>
                         <div class="text-box">
                             <a href="blog7.html"><h3>Future Trends in Oil & Gas Technologies</h3></a>
@@ -472,31 +473,7 @@
 
 <script src="js/jquery.js"></script>
 
-<script>
-    (function() {
-        emailjs.init("XaqzcE5nbwaTxunef"); // Replace with your EmailJS user ID
 
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent page reload
-
-            const formData = {
-                name: document.getElementById("name").value,
-                email: document.getElementById("email").value,
-                address: document.getElementById("address").value
-            };
-
-            emailjs.send("service_55kngma", "template_lqb8qz7", formData)
-                .then(response => {
-                    alert("Email sent successfully!");
-                    document.getElementById("contact-form").reset(); // Reset form after submission
-                })
-                .catch(error => {
-                    console.error("Email sending failed:", error);
-                    alert("Failed to send email.");
-                });
-        });
-    })();
-</script>
 
 <script>
     

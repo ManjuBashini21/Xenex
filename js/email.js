@@ -1,4 +1,5 @@
-(function() {
+
+    (function() {
         emailjs.init("XaqzcE5nbwaTxunef"); // Replace with your EmailJS user ID
 
         document.getElementById("contact-form").addEventListener("submit", function(event) {
@@ -7,7 +8,8 @@
             const formData = {
                 name: document.getElementById("name").value,
                 email: document.getElementById("email").value,
-                address: document.getElementById("address").value
+                address: document.getElementById("address").value,
+                message: document.getElementById("message").value
             };
 
             emailjs.send("service_55kngma", "template_lqb8qz7", formData)
