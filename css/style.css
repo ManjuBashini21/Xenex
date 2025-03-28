@@ -6718,6 +6718,38 @@ font-size: 20px;
 }
 
 .scrolling-text i {
-  color: #FFD700; /* Light gold for icons */
+  color: #FFD700; 
   font-size: 22px;
+}
+
+
+@keyframes whatsappBounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  width: 100px;
+  height: 100px;
+  z-index: 1000;
+  animation: whatsappBounce 1.5s infinite ease-in-out; /* Apply animation */
+}
+
+.whatsapp-btn img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 25px;
+}
+
+/* Hover Effect (Slight Increase in Size) */
+.whatsapp-btn:hover img {
+  transform: scale(1.1);
 }
