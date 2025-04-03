@@ -1213,7 +1213,6 @@ body.active-preloader-ovh {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-color: #181818;
 }
 
 #minimal-bootstrap-carousel.slider-home-two .carousel-inner .item {
@@ -1225,6 +1224,7 @@ body.active-preloader-ovh {
   background-size: cover;
   background-color: #34424F;
 }
+
 @media (max-height: 600px) {
   #minimal-bootstrap-carousel .carousel-inner .item {
     min-height: 600px;
@@ -3985,43 +3985,43 @@ footer.site-footer .bottom-footer p {
 }
 
 .about-banner {
-  background-image: url(../img/hero/home2.jpg);
+  background-image: url(../img/hero/oil-and-gas.jpg);
 }
 
 .blog-banner {
-  background-image: url(../img/hero/hero2.jpg);
+  background-image: url(../img/hero/petrochemical-2.jpg);
 }
 
 .contact-banner {
-  background-image: url(../img/hero/hero3.jpg);
+  background-image: url(../img/hero/water-reclamation-plant.jpg);
 }
 
 .custom-banner {
-  background-image: url(../img/hero/hero4.jpg);
+  background-image: url(../img/hero/industrial.jpg);
 }
 
 .frp-banner {
-  background-image: url(../img/hero/hero5.jpg);
+  background-image: url(../img/hero/refineries.jpg);
 }
 
 .grp-banner {
-  background-image: url(../img/hero/hero6.jpg);
+  background-image: url(../img/hero/power\ plant.jpg);
 }
 
 .installation-banner {
-  background-image: url(../img/hero/hero7.jpg);
+  background-image: url(../img/hero/oil-gas-2.jpg);
 }
 
 .project-banner {
-  background-image: url(../img/hero/hero8.jpg);
+  background-image: url(../img/hero/hero10.jpg);
 }
 
 .service-banner {
-  background-image: url(../img/hero/hero9.jpg);
+  background-image: url(../img/hero/oil-gas3.jpg);
 }
 
 .training-banner {
-  background-image: url(../img/hero/hero10.jpg);
+  background-image: url(../img/hero/oil-gas4.jpg);
 }
 
 
