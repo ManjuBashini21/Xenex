@@ -3993,7 +3993,7 @@ footer.site-footer .bottom-footer p {
 }
 
 .contact-banner {
-  background-image: url(../img/hero/oil-gas-industry.jpg);
+  background-image: url(../img/hero/contactus.jpg);
 }
 
 .custom-banner {
@@ -4013,7 +4013,7 @@ footer.site-footer .bottom-footer p {
 }
 
 .project-banner {
-  background-image: url(../img/hero/water-reclamation.png);
+  background-image: url(../img/hero/projects.jpg);
   position: relative;
   background-size: cover;
   background-position: center;
@@ -4061,7 +4061,7 @@ footer.site-footer .bottom-footer p {
   font-size: 36px;
   font-family: 'Poppins';
   font-weight: 700;
-  color: #FE5A0E; /* Dark Blue for better visibility */
+  color: #ffffff; /* Dark Blue for better visibility */
   margin-bottom: 5px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Soft shadow for better contrast */
 }
@@ -4069,25 +4069,29 @@ footer.site-footer .bottom-footer p {
 .inner-banner ul.breadcumb li {
   display: inline-block;
   vertical-align: middle;
-  color: #374151; /* Dark Gray for better readability */
+  color: #ffffff; /* Dark Gray for better readability */
   font-size: 18px;
   font-weight: 500;
 }
 
 .inner-banner ul.breadcumb a {
-  color: #FE5A0E; /* Deep Golden for contrast */
+  color: #ffffff; /* Deep Golden for contrast */
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
 }
 
 .inner-banner ul.breadcumb a:hover {
-  color: #B45309; /* Darker Golden on Hover */
+  color: #ffffff; /* Darker Golden on Hover */
 }
 
 .inner-banner ul.breadcumb span.sep {
   margin-left: 10px;
   margin-right: 10px;
+  color: #ffffff; /* Neutral Gray for separator */
+}
+
+.inner-banner ul.breadcumb span.sep i{
   color: #ffffff; /* Neutral Gray for separator */
 }
 
