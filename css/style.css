@@ -2587,6 +2587,7 @@ footer.site-footer .bottom-footer p {
   padding: 50px 20px 45px 55px;
   margin-bottom: 100px;
   max-width: 800px;
+  height: 300px;
 }
 .single-testimonials-style-one h3,
 .single-testimonials-style-one p {
@@ -3853,7 +3854,7 @@ footer.site-footer .bottom-footer p {
     justify-content: center;
     margin:auto ;
     text-align: center !important;
-    margin-left: 50px;
+    margin-left: 10px;
   }
 }
 
@@ -5365,7 +5366,7 @@ footer.site-footer .bottom-footer p {
 .single-service-style-four .img-box {
   position: relative;
   width: 100%;
-  max-width: 600px; /* Set a max-width for consistency */
+  max-width: 600px !important; /* Set a max-width for consistency */
   margin: auto; /* Center the box */
 }
 
@@ -5545,6 +5546,35 @@ footer.site-footer .bottom-footer p {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
   background-color: #f1f1f1; /* Change background color on hover */
 }
+
+@media only screen and (max-width: 375px) {
+  .single-service-style-four .img-box img{
+    width: 700px !important;
+  }
+  .img-box .services-overlay{
+    width: 700px !important;
+    border-radius: 15px;
+  }
+  .contact-info-style-one .icon-box i{
+    margin: auto;
+    margin-left: 60px;
+  }
+  .contact-info-style-one .contact-infos{
+    margin: auto;
+  }
+
+}
+
+@media only screen and (max-width: 414px) {
+  .single-service-style-four .img-box img{
+    width: 700px !important;
+  }
+  .contact-info-style-one .icon-box i{
+    margin: auto;
+    margin-left: 60px;
+  }
+}
+
 
 /* Responsive Design */
 @media (max-width: 767px) {
@@ -7044,6 +7074,28 @@ font-size: 20px;
   border-radius: 5px; /* Optional for smooth edges */
 }
 
+.content-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: none !important;
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+}
+
+.content-section h3 {
+  color: #FD5912;
+  margin-bottom: 10px;
+}
+
+.content-section p {
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
 
 @media only screen and (max-width: 768px) {
   .info-box{
@@ -7059,7 +7111,7 @@ font-size: 20px;
     margin: auto;
   }
   .timeline-container .timeline-content{
-    width: 700px;
+    width: 600px;
   }
   .whychoose-container p{
     width: 700px;
@@ -7074,7 +7126,31 @@ font-size: 20px;
   }
   .region-box p{
     font-size: 18px;
-    line-height: 1.2rem;
+    line-height: 3.9rem;
+  }
+  .contact-info-style-one .icon-box i{
+    margin-right: 30px !important;
+  }
+  section .single-testimonials-style-one{
+    margin-right: 50px !important;
   }
 }
 
+@media only screen and (max-width: 1024px){
+  .about-style-three{
+    display: none !important;
+  }
+  .content-section{
+    display: block !important;
+  }
+  .whychoose-container .services-grid{
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header.header-home-three .header-navigation .container{
+    margin: auto;
+    margin-right: 30px !important;
+  }
+}
