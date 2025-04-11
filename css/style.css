@@ -3752,7 +3752,7 @@ footer.site-footer .bottom-footer p {
   margin: 0;
 }
 
-.contact-info-style-one .text-box p {
+.contact-info-style-one .text-box p a {
   font-size: 18px;
   font-family: 'Poppins';
   color: #FFFFFF;
@@ -4961,9 +4961,18 @@ footer.site-footer .bottom-footer p {
 .single-service-style-three .img-box {
   position: relative;
   height: 250px;
+  width: 100%; /* Ensures full width within column */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .single-service-style-three .img-box img{
-  height: 250px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills without distortion */
+  max-width: 100%;
+  border-radius: 5px;
 }
 
 .single-service-style-three .text-box {
@@ -6448,7 +6457,7 @@ font-size: 20px;
   padding-top: 10px;
   margin-top: 10px;
 }
-.sidebar .single-sidebar.category-widget ul.category-list li a {
+.sidebar .single-sidebar.category-widget ul.category-list li{
   color: #555555;
   font-size: 15px;
   position: relative;
@@ -6456,11 +6465,12 @@ font-size: 20px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
-.sidebar .single-sidebar.category-widget ul.category-list li a span.count {
+.sidebar .single-sidebar.category-widget ul.category-list li span.count {
   float: right;
 }
-.sidebar .single-sidebar.category-widget ul.category-list li a:hover {
+.sidebar .single-sidebar.category-widget ul.category-list li:hover {
   color: #FE5A0E;
+  cursor: pointer;
 }
 .sidebar .single-sidebar.recent-post-widget .recent-post-list {
   margin-top: -5px;
@@ -6513,7 +6523,7 @@ font-size: 20px;
   padding: 0 5px;
   margin-bottom: 10px;
 }
-.sidebar .single-sidebar.tags-widget ul.tags-list li a {
+.sidebar .single-sidebar.tags-widget ul.tags-list li{
   display: block;
   border: 1px solid #F5F9FF;
   color: #555555;
@@ -6524,10 +6534,11 @@ font-size: 20px;
   transition: all .4s;
   background: #F5F9FF;
 }
-.sidebar .single-sidebar.tags-widget ul.tags-list li a:hover {
+.sidebar .single-sidebar.tags-widget ul.tags-list li:hover {
   color: #fff;
   border-color: #FE5A0E;
   background: #FE5A0E;
+  cursor: pointer;
 }
 .sidebar .single-sidebar.service-sidebar {
   border: none !important;
@@ -6772,3 +6783,18 @@ font-size: 20px;
 .whatsapp-btn:hover img {
   transform: scale(1.1);
 }
+
+
+
+
+
+
+
+
+.fixed-img {
+  width: 100%;      /* Makes it responsive within its container */
+  height: 250px;    /* Fixed height */
+  object-fit: cover; /* Ensures the image fills the box without distortion */
+  border-radius: 5px; /* Optional for smooth edges */
+}
+
