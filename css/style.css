@@ -3289,7 +3289,6 @@ footer.site-footer .bottom-footer p {
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
   width: 100%;
-  border-radius: 10px;
 }
 
 .hover-enlarge {
@@ -3750,6 +3749,9 @@ footer.site-footer .bottom-footer p {
 @media (max-width: 480px) {
   .popup-box {
     padding: 16px;
+    width: 70% !important;
+    left: 20% !important;
+    transform: translate(-50%, -50%);
   }
 
   .btn-submit,
@@ -3760,6 +3762,16 @@ footer.site-footer .bottom-footer p {
 
   .close-icon {
     font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .popup-box {
+    width: 50%;
+    position: relative;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
   }
 }
 
@@ -5376,7 +5388,6 @@ footer.site-footer .bottom-footer p {
   margin-right: 10px;
   width: 100% !important;
   object-fit: cover; /* Ensures images fill the area without distortion */
-  border-radius: 10px; /* Optional: Adds rounded corners */
 }
 
 .single-service-style-four .img-box > img {
@@ -5549,12 +5560,16 @@ footer.site-footer .bottom-footer p {
 
 @media only screen and (max-width: 375px) {
   .single-service-style-four .img-box img{
-    width: 700px !important;
+    width:100%;
+    display: block;
   }
-  .img-box .services-overlay{
-    width: 700px !important;
-    border-radius: 15px;
+
+  .single-service-style-four{
+    width: 100%;
+    display: block;
   }
+
+  
   .contact-info-style-one .icon-box i{
     margin: auto;
     margin-left: 60px;
@@ -5562,6 +5577,7 @@ footer.site-footer .bottom-footer p {
   .contact-info-style-one .contact-infos{
     margin: auto;
   }
+
 
 }
 
@@ -7179,4 +7195,43 @@ font-size: 20px;
     margin: auto;
     margin-right: 30px !important;
   }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .header.header-home-three .stricky-fixed{
+    width: 100% !important;
+    margin-left: 20px !important;
+  }
+  .inner-banner .container{
+    width: 90% !important;
+  }
+  .info-box{
+    width: 100% !important;
+  }
+  .timeline-container .history-header p{
+    width: 100% !important;
+  }
+  .whychoose-container p{
+    width: 100% !important;
+  }
+  section .single-testimonials-style-one{
+    height: auto !important;
+  }
+  .info-box p{
+    font-size: 16px;
+  }
+  .region-box p{
+    font-size: 16px;
+  }
+  #popupOverlay{
+    background: none;
+  }
+  .popup-box{
+    top: 10%;
+    left: 20% !important;
+    transform: translate(-50%, -50%);
+    z-index: 2147483647;
+  }
+  
 }
