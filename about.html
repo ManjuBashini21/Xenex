@@ -24,6 +24,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
    
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
@@ -87,7 +88,14 @@
                 </div><!-- /.navbar-collapse -->
 
                 <div class="right-side-box">
-                    <a href="#" class="rqa-btn" onclick="togglePopup()"><span class="inner">Get a Quote <i class="fa fa-caret-right"></i></span></a>
+                    <a href="#" class="rqa-btn" onclick="togglePopup()">
+                        <span class="inner">Get a Quote <i class="fa fa-caret-right"></i></span>
+                    </a>
+        
+                    <!-- WhatsApp Button Next to "Get a Quote" -->
+                    <a href="https://wa.me/6598903284" target="_blank" class="whatsapp-btn-home" style="margin-left: 15px;">
+                        <img src="img/download__1_-removebg-preview.png" alt="WhatsApp" style="height: 40px;">
+                    </a>
                 </div>
                 
                
@@ -134,56 +142,32 @@
         </div><!-- /.container -->
     </div><!-- /.inner-banner -->
     
-	<section class="about-style-three">
-
-		<div class="container">
-
-			<div class="row">
-
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<div class="about-img-box">
-						<img src="img/hero/hero4.jpg" alt="Awesome Image"/>
-						<div class="content">
-							<span>Our Story</span>
-							<h3>Something About <br /> Us</h3>
-						</div>
-					</div><!-- /.about-img-box -->
-				</div>
-                <div class="about-content-mg">
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <div class="about-content">
-                            <h3 style="color: #FD5912;">About Xenex Engineering & Process Pte. Ltd.</h3>
-                            <p>Xenex Engineering & Process Pte. Ltd. is a trusted provider of innovative fiberglass solutions with over 5+ years of expertise in Water Treatment, Oil & Gas, Power Plants, and Process Engineering. We specialize in high-quality GRP/FRP systems, offering design, installation, and maintenance services with a focus on durability, cost-effectiveness, and customer satisfaction.</p>
-                        </div><!-- /.about-content -->
-                    </div>
-    
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <div class="about-content">
-                            <h3 style="color: #FD5912;">About affiliated Xenex Engineering Construction pvt. Ltd.</h3>
-                            <p>Manufacturing of Fiberglass Commercial and Fishing Boats, Boat Repair, FRP Tanks, and FRP Products for Automotive, Construction, and Power Plant Applications.</p>
-                        </div><!-- /.about-content -->
-                    </div>
-    
+    <section class="company-section">
+        <div class="company-section-overlay">
+            <div class="company-section-container">
+                <h1 class="section-title">Our Companies</h1>
+                <div class="company-wrapper">
+                <div class="company-box">
+                    <h2>Xenex Engineering & Process Pte. Ltd.</h2>
+                    <p>
+                    Xenex Engineering & Process Pte. Ltd. is a trusted provider of innovative fiberglass solutions with over 5+ years of expertise in Water Treatment, Oil & Gas, Power Plants, and Process Engineering. We specialize in high-quality GRP/FRP systems, offering design, installation, and maintenance services with a focus on durability, cost-effectiveness, and customer satisfaction.
+                    </p>
                 </div>
-
-				
-			</div>
-
-		</div><!-- /.container -->
-
-	</section><!-- /.about-style-three -->
-
-    <section>
-        <div class="content-section">
-            <h3 style="color: #FD5912;">About Xenex Engineering & Process Pte. Ltd.</h3>
-            <p>Xenex Engineering & Process Pte. Ltd. is a trusted provider of innovative fiberglass solutions with over 5+ years of expertise in Water Treatment, Oil & Gas, Power Plants, and Process Engineering. We specialize in high-quality GRP/FRP systems, offering design, installation, and maintenance services with a focus on durability, cost-effectiveness, and customer satisfaction.</p>
-          
-            <h3 style="color: #FD5912;">About affiliated Xenex Engineering Construction pvt. Ltd.</h3>
-            <p>Manufacturing of Fiberglass Commercial and Fishing Boats, Boat Repair, FRP Tanks, and FRP Products for Automotive, Construction, and Power Plant Applications.</p>
-          </div>
-          
+                <div class="company-box">
+                    <h3>Affiliated Company</h3>
+                    <h2>Xenex Engineering and Construction Pvt. Ltd.</h2>
+                    <p>
+                    Supply, Installation, Lamination/Bonding, and Testing of FRP/GRP/GRE Pipes & Fittings, FRP Tanks, Floor Lamination, and Modifications & Repair Services.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
     </section>
-
+      
+      
+      
+      
 
 
 
@@ -621,9 +605,7 @@
 
 </div><!-- /.page-wrapper -->
 
-<a href="https://wa.me/6598903284" target="_blank" class="whatsapp-btn">
-    <img src="img/download__1_-removebg-preview.png" alt="WhatsApp">
-</a>
+
 
 <footer class="site-footer fixed-footer">
 
@@ -780,7 +762,10 @@
 
 <script src="js/email.js"></script>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
 
 <script>
     
