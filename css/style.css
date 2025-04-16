@@ -306,6 +306,9 @@ body.active-preloader-ovh {
 .header-navigation .container {
   position: relative;
   padding-right: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header-navigation .container .navbar-header {
   position: absolute;
@@ -315,6 +318,7 @@ body.active-preloader-ovh {
           transform: translateY(-50%);
   z-index: 10;
 }
+
 .header-navigation .container .navbar-header button.side-nav-toggler {
   border: none;
   outline: none;
@@ -341,6 +345,7 @@ body.active-preloader-ovh {
   text-align: left;
   padding: 0;
   background: #ffffff;
+  
 }
 .header-navigation .container .right-side-box {
   position: absolute;
@@ -7339,3 +7344,53 @@ font-size: 20px;
   }
 }
 
+/* Logo styling */
+.header-navigation .logo {
+  position: absolute;
+  left: 100px !important; 
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 11;
+  display: block;
+}
+
+.header-navigation .logo img {
+  object-fit: contain;
+}
+
+
+.header-navigation .container {
+  padding-left: 30px; 
+}
+
+
+@media (max-width: 768px) {
+  .header-navigation .logo {
+     display: none;
+  }
+  
+}
+
+.header-logo {
+  position: fixed;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 11;
+  width: 300px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.header-logo img {
+  width: 100%;
+  height: auto;
+  max-height: 50px;
+  object-fit: contain;
+}
+
+.header-navigation.scrolled-past-hero .header-logo {
+  opacity: 1;
+  visibility: visible;
+}

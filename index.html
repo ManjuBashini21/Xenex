@@ -88,6 +88,11 @@
 
         <nav class="navbar navbar-default header-navigation stricky">
 
+            <a href="index.html" class="header-logo">
+                <img src="img/LOGO.png" alt="Company Logo">
+            </a>
+
+
             <div class="container clearfix">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -96,6 +101,7 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse main-navigation mainmenu " id="main-nav-bar">
+                    
                     
                     <ul class="nav navbar-nav navigation-box">
                         <li class="current"> 
@@ -1284,6 +1290,29 @@
         });
     });
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const header = document.querySelector('.header-navigation');
+        const heroSection = document.getElementById('minimal-bootstrap-carousel');
+        
+        if (heroSection) {
+            const heroHeight = heroSection.offsetHeight;
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > heroHeight) {
+                    header.classList.add('scrolled-past-hero');
+                } else {
+                    header.classList.remove('scrolled-past-hero');
+                }
+            });
+            
+            // Initial check in case page loads with scroll
+            if (window.scrollY > heroHeight) {
+                header.classList.add('scrolled-past-hero');
+            }
+        }
+    });
+    </script>
 
 
 <script>
