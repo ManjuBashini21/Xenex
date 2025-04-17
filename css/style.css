@@ -7348,7 +7348,7 @@ font-size: 20px;
 .header-navigation .logo {
   position: absolute;
   left: 100px !important; 
-  top: 70px;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 11;
   display: block;
