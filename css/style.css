@@ -4157,13 +4157,13 @@ footer.site-footer .bottom-footer p {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.inner-banner h3, .inner-banner ul {
+.inner-banner h1, .inner-banner ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.inner-banner h3 {
+.inner-banner h1 {
   font-size: 36px;
   font-family: 'Poppins';
   font-weight: 700;
